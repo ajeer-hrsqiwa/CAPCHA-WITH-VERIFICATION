@@ -53,7 +53,7 @@
         <div class="bg-white p-8 rounded-xl card-shadow border border-gray-100 flex flex-col items-center">
             <h3 class="mb-6 font-bold text-[16px] lang-ar">يرجى التحقق من الكابتشا للاستمرار</h3>
             <h3 class="mb-6 font-bold text-[16px] lang-en hidden">Please verify reCAPTCHA to continue</h3>
-            <div class="g-recaptcha" data-sitekey="6Ldj67osAAAAABW7uAG8MrNg8uaBrJ7Pqm5KvPjq" data-callback="onCaptchaSuccess"></div>
+            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-callback="onCaptchaSuccess"></div>
         </div>
     </div>
 
@@ -168,7 +168,7 @@
                 <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6 order-2 md:order-1">
                     <img src="logo.svg" alt="Ajeer" class="h-9 md:h-11">
                     <div class="flex flex-col md:flex-row gap-2 md:gap-4 text-gray-400 text-[12px]">
-                        <span class="lang-ar">© ٢٠٢٦ / أجير حلول الموارد البشرية</span>
+                        <span class="lang-ar">© ٢٠٢৬ / أجير حلول الموارد البشرية</span>
                         <span class="lang-en hidden font-en">© 2026 / Ajeer HRS</span>
                         <div class="flex gap-4">
                             <a href="https://ajeer.qiwa.sa/landing/privacy" target="_blank" class="hover:text-blue-800 transition"><span class="lang-ar">سياسة الخصوصية</span><span class="lang-en hidden font-en">Privacy Policy</span></a>
@@ -185,11 +185,9 @@
     </div>
 
     <script>
-        // Captcha Success Callback
+        // Callback for successful captcha verification
         function onCaptchaSuccess() {
-            // Hide captcha container
             document.getElementById('captcha-container').classList.add('hidden');
-            // Remove blur from content area
             document.getElementById('content-area').classList.add('verified');
         }
 
